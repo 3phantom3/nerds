@@ -2,6 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link type="icon" rel="icon" href="favicon.ico">
+    <link type="image/png" sizes="16x16" rel="icon" href="img/favicon/16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon/32.png">
+    <link type="image/png" sizes="152x152" rel="apple-touch-icon" href="img/favicon/152.png">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Студия дизайна Nerds</title>
@@ -26,63 +30,65 @@
    </header>
    <main>
     <h1>интернет магазин Nerds</h1>
-    <section>
+    <section class="slider-section">
+      <div class="slider-contanier">
       <h2>Особенности</h2>
-      <ul>
-        <li>
+      <ul class="slider">
+        <li class="slider-item">
           <h3>Долго, дорого, скрупулезно.</h3>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="blank.html">Узнать больше</a>
+          <a class="button" href="blank.html">Узнать больше</a>
           <img src="img/slayder/nerds-index-slide1.png" width="760" height="431">
         </li>
-        <li>
+        <li class="slider-item">
           <h3>Любим математику как никто другой</h3>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-          <a href="blank.html">Узнать больше</a>
+          <a class="button" href="blank.html">Узнать больше</a>
           <img src="img/slayder/nerds-index-slide2.png" width="760" height="431">
         </li>
-        <li>
+        <li class="slider-item">
           <h3>Только ночь, только хардкор</h3>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="blank.html">Узнать больше</a>
+          <a class="button" href="blank.html">Узнать больше</a>
           <img src="img/slayder/nerds-index-slide3.png" width="760" height="431">
         </li>
       </ul>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+      <ul class="slider-menu">
+        <li><a href="#"></a>1</li>
+        <li><a href="#"></a>2</li>
+        <li><a href="#"></a>3</li>
       </ul>
+    </div>
     </section>
-    <section>
-      <h2>Продукты</h2>
+    <section class="service">
+      <h2>Услуги</h2>
       <ul>
         <li>
           <img src="img/ilustration/illustration-1.svg" width="260" height="49">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="blank.html">Заказать</a>
+          <a class="button" href="blank.html">Заказать</a>
         </li>
         <li>
           <img src="img/ilustration/illustration-2.svg" width="260" height="49">
           <h3>приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="blank.html">Заказать</a>
+          <a class="button green-button" href="blank.html">Заказать</a>
         </li>
         <li>
           <img src="img/ilustration/illustration-3.svg" width="260" height="49">
           <h3>презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="blank.html">Заказать</a>
+          <a class="button yellow-button" href="blank.html">Заказать</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="us">
       <h2>О нас</h2>
-      <p>Мы — маленькая, но гордаядизайн-студия из Краснодара.</p>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
+      <p class="us-titel">Мы — маленькая, но гордаядизайн-студия из Краснодара.</p>
+      <p class="us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
       <img src="img/nerds-illustration.svg" width="360" height="208">
-      <p>
+      <p class="us-orders">
         Выполняем заказы на разработку:
         <ul>
           <li>Веб-сайтов любой сложности</li>
@@ -90,24 +96,24 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </p>
-      <p>
+      <p class="us-procent">
         с 2004 года Любим точность во всем:
-        <dl>
-          <dt>146%</dt>
+        <dl class="us-procent-table">
+          <dt>146<sup>%</sup></dt>
             <dd>Уровень самоотдачи</dd>
-          <dt>100%</dt>
+          <dt>100<sup>%</sup></dt>
             <dd>Соблюдение сроков</dd>
-          <dt>50%</dt>
+          <dt>50<sup>%</sup></dt>
             <dd>Минимальная предоплата</dd>
         </dl>
       </p>
     </section>
-    <section>
+    <section class="partners">
       <h2>Наши партнеры</h2>
-      <img src="img/partners/logo_htmlacademy.png" alt="htmlacademy">
-      <img src="img/partners/logo_borodinsky.png" alt="borodinsky">
-      <img src="img/partners/logo_pink.png" alt="pink">
-      <img src="img/partners/logo_mishka.png" alt="logo_mishka">
+      <a href="#"><img src="img/partners/logo_htmlacademy.svg" alt="htmlacademy"></a>
+      <a href="#"><img src="img/partners/logo_borodinsky.svg" alt="borodinsky"></a>
+      <a href="#"><img src="img/partners/logo_pink.svg" alt="pink"></a>
+      <a href='#'><img src="img/partners/logo_mishka.svg" alt="logo_mishka"></a>
     </section>
 
    </main>
