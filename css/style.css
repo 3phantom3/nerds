@@ -1,3 +1,29 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+       url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto"),
+       url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"),
+       url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
+}
+
+
 :root{
   --base-grey:#EEEEEE;
   --base-red:#FB565A;
@@ -12,4 +38,65 @@
   --activ-green:#00AA62;
   --hover-yellow:#EAB534;
   --activ-yellow:#E5A722;
+}
+
+body{
+  min-width: 1160px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: var(--base-white);
+
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* шапка сайта */
+
+.header{
+  background-color: var(--base-grey);
+}
+
+.navigation{
+  width: 1160px;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--base-black);
+}
+
+.site-navigation{
+  list-style: none;
+
+}
+
+.navigation a:visited{
+  color: var(--base-black);
+}
+
+.navigation a:hover{
+  color: var(--base-red);
+}
+
+.navigation a:active{
+  color: var(--base-black);
+  opacity:0.3;
+}
+
+.logo:hover{
+  opacity: 0.7;
+}
+.logo:active:{
+  opacity: 0.3;
 }
