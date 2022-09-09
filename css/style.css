@@ -1,0 +1,15 @@
+:root{
+  --base-grey:#EEEEEE;
+  --base-red:#FB565A;
+  --base-green:#00CA74;
+  --base-yellow:#EFC849;
+  --base-black:#000000;
+  --base-white:#FFFFFF;
+  --base-grey-icon:#E1E1E1;
+  --hover-red:#E74246;
+  --activ-red:#D7373B;
+  --hover-green:#00BC6C;
+  --activ-green:#00AA62;
+  --hover-yellow:#EAB534;
+  --activ-yellow:#E5A722;
+}
