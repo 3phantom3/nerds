@@ -39,8 +39,13 @@
   --hover-yellow:#EAB534;
   --activ-yellow:#E5A722;
   --paragraf-text:#283136;
+  --contact-text:#666666;
+  --social-text:#444444;
   --button-text-activ:rgba(255, 255, 255, 0.3);
   --us-procent:rgba(255,255,255,0.1);
+  --social-button-text:(0,0,0,0.3);
+  --border-lite-grey:#D7DCDE;
+  --border-hover-grey:#B4B9BB;
 }
 
 body{
@@ -147,6 +152,10 @@ img{
   opacity:0.3;
 }
 
+.navigation a{
+  text-transform: uppercase;
+}
+
 .logo:hover{
   opacity: 0.7;
 }
@@ -210,10 +219,12 @@ img{
 
 .us-orders{
   color: var(--paragraf-text);
+  font-weight: 700;
+  text-transform: uppercase;
+  
 }
 
 .us-procent{
-  color: var(--us-procent);
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -246,3 +257,122 @@ img{
 .partners img:active{
   opacity: 0.1;
 }
+
+/* контакты */
+
+.contacts-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts-text{
+  color: var(--contact-text);
+}
+
+.contacts-tel,
+.contacts-tel:hover,
+.contacts-tel:active{
+  color: var(--contact-text);
+}
+
+/* социальные сети*/
+
+.social-titel{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+
+}
+
+.social-text{
+  color: var(--social-text);
+}
+
+.social-button{
+  display: inline-block;
+  background-color: var(--base-grey-icon);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  font-size: 0;
+  
+}
+.social-button img{
+  display: none;
+}
+.social ul{
+  list-style: none;
+}
+
+.social-button-vk{
+  background-image: url(../img/social-icon/vk-icon.svg);
+}
+.social-button-shape{
+  background-image: url(../img/social-icon/Shape.svg);
+}
+.social-button-insta{
+  background-image: url(../img/social-icon/insta-icon.svg);
+}
+
+.social-button:hover{
+  background-color: var(--hover-red);
+}
+
+.social-button:active{
+  background-color: var(--activ-red);
+}
+
+.social-button-vk:active{
+  background-image: url(../img/social-icon/vk-icon-opacity.svg);
+}
+.social-button-shape:active{
+  background-image: url(../img/social-icon/Shape-opacity.svg);
+}
+.social-button-insta:active{
+  background-image: url(../img/social-icon/insta-icon-opacity.svg);
+}
+
+/* модальное окно */
+
+.modal h2{
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.modal label{
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.modal input{
+  border: 2px solid var(--border-lite-grey);
+}
+
+.modal input:hover{
+  border-color: var(--border-hover-grey);
+}
+
+.modal input:focus{
+  border-color: var(--base-black);
+  outline: none;
+}
+
+.modal input:invalid{
+  border-color: var(--hover-red);
+  color: var(--hover-red);
+}
+
+.modal input::-webkit-input-placeholder{
+color: var(--social-text);
+}
+
+.modal input::-moz-placeholder{
+  color: var(--social-text);
+}
+
+

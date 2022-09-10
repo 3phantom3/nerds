@@ -117,29 +117,30 @@
     </section>
    </main>
    <footer>
-    <section>
+    <section class="contacts">
+      <div class="contanier">
       <h2>Контакты</h2>
-      <p>NЁRDS DESIGN STUDIO</p>
-      <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
-      <a href="blank.html">Напишите нам</a>
+      <p class="contacts-titel">NЁRDS DESIGN STUDIO</p>
+      <p class="contacts-text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+      <a class="contacts-tel" href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class='button' href="blank.html">Напишите нам</a>
+    </div>
       <img src="img/map/map.jpg" alt="карта">
       <img src="img/map/map-marker.png" alt="маркер на карте">
     </section>
-    <section>
+    <section class="social contanier">
       <h2>Социальные сети</h2>
       <ul>
-        <li><a href="blank.html"><img src="img/social-icon/vk-icon.svg" alt="vk">Вконтакте</a></li>
-        <li><a href="blank.html"><img src="img/social-icon/Shape.svg" alt="facebook">Facebook</a></li>
-        <li><a href="blank.html"><img src="img/social-icon/insta-icon.svg" alt="instagramm">Инстаграм</a></li>
+        <li><a class="social-button social-button-vk" href="blank.html"><img src="img/social-icon/vk-icon.svg" alt="vk">Вконтакте</a></li>
+        <li><a class="social-button social-button-shape" href="blank.html"><img src="img/social-icon/Shape.svg" alt="facebook">Facebook</a></li>
+        <li><a class="social-button social-button-insta" href="blank.html"><img src="img/social-icon/insta-icon.svg" alt="instagramm">Инстаграм</a></li>
       </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <p class="social-titel">Давайте дружить, это выгодно!</p>
+      <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
     </section>
    </footer>
-   <section>
+   <section class="modal" >
      <h2>Напишите нам</h2>
-     <a href="#">Закрыть<a>
      <form action="https://echo.htmlacademy.ru" method="post">
        <label for="name">Ваше имя:</label>
        <input type="text" name="name" placeholder="Имя Фамилия">
@@ -147,8 +148,9 @@
        <input type="email" name="email" placeholder="email@example.com">
        <label for="text">Текст письма:</label>
        <input type="text" name="text" placeholder="В свободной форме">
-       <button type="submit">Отправить</button>
+       <button class="button" type="submit">Отправить</button>
      </form>
+     <button class="modal-close" href="#">Закрыть<a></a>
    </section>
   </body>
 </html>
