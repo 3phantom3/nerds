@@ -38,7 +38,9 @@
   --activ-green:#00AA62;
   --hover-yellow:#EAB534;
   --activ-yellow:#E5A722;
-  --paragraf-text:#283136
+  --paragraf-text:#283136;
+  --button-text-activ:rgba(255, 255, 255, 0.3);
+  --us-procent:rgba(255,255,255,0.1);
 }
 
 body{
@@ -63,6 +65,11 @@ img{
   height: auto;
 }
 
+.contanier{
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* кнопки */
 
 .button{
@@ -80,7 +87,7 @@ img{
 
 .button:active{
   background-color: var(--activ-red);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--button-text-activ);
 }
 
 .green-button{
@@ -93,7 +100,7 @@ img{
 
 .green-button:active{
   background-color: var(--activ-green);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--button-text-activ);
 }
 
 .yellow-button{
@@ -106,7 +113,7 @@ img{
 
 .yellow-button:active{
   background-color: var(--activ-yellow);
-  color: rgba(255, 255, 255, 0.3);
+  color: ;
 }
 
 
@@ -117,8 +124,6 @@ img{
 }
 
 .navigation{
-  width: 1160px;
-  margin: 0 auto;
   font-weight: 500;
   line-height: 30px;
   color: var(--base-black);
@@ -155,11 +160,6 @@ img{
   background-color: var(--base-grey);
 }
 
-.slider-contanier{
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .slider{
   list-style: none;
 }
@@ -176,11 +176,6 @@ img{
 }
 
 /* услуги */
-
-.service{
-  width: 1160px;
-  margin: 0 auto;
-}
 
 .service ul{
   list-style: none;
@@ -199,12 +194,6 @@ img{
 }
 
 /* О нас */
-
-.us{
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .us-text{
   color: var(--paragraf-text);
 }
@@ -224,7 +213,7 @@ img{
 }
 
 .us-procent{
-  color: rgba(0, 0, 0, 0.1);
+  color: var(--us-procent);
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -244,8 +233,6 @@ img{
 
 /* наши партнеры */
 .partners{
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .partners img{
