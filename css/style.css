@@ -46,9 +46,15 @@
   --social-button-text:(0,0,0,0.3);
   --border-lite-grey:#D7DCDE;
   --border-hover-grey:#B4B9BB;
+  --up-down-activ:#231F20;
 }
 
 body{
+  display: grid;
+  grid-template-rows:
+  min-content
+  1fr
+  min-content;
   min-width: 1160px;
   min-height: 100vh;
   margin: 0;
@@ -122,6 +128,7 @@ img{
 }
 
 
+
 /* шапка сайта */
 
 .header{
@@ -161,6 +168,19 @@ img{
 }
 .logo:active:{
   opacity: 0.3;
+}
+
+/* заголовок */
+.titel-wraper{
+  background-color: var(--base-grey);
+}
+
+.titel-wraper h1{
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
 }
 
 /* slider */
@@ -375,4 +395,65 @@ color: var(--social-text);
   color: var(--social-text);
 }
 
+/* сортировка */
+
+
+.sorted-menu-titel{
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.sorted-menu{
+  list-style: none;
+}
+
+.sorted-menu-item{
+  font-size: 14px;
+  opacity: 0.3;
+}
+
+.sorted-activ{
+  opacity: 1;
+}
+
+.sorted-up-down{
+  list-style: none;
+}
+
+.sorted-up-down-activ svg path{
+  fill:(--up-down-activ);
+  fill-opacity: 1;
+}
+
+/* фильтр */
+
+.filter legend{
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.filter label{
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--paragraf-text);
+}
+
+.filter-price label{
+  text-transform: uppercase;
+}
+
+.filter-price-input{
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.filter-price-input::-webkit-outer-spin-button,
+.filter-price-input::-webkit-inner-spin-button{
+  display: none;
+}
 
