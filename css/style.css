@@ -43,7 +43,7 @@
   --social-text:#444444;
   --button-text-activ:rgba(255, 255, 255, 0.3);
   --us-procent:rgba(255,255,255,0.1);
-  --social-button-text:(0,0,0,0.3);
+  --social-button-text:rgba(0,0,0,0.3);
   --border-lite-grey:#D7DCDE;
   --border-hover-grey:#B4B9BB;
   --up-down-activ:#231F20;
@@ -124,7 +124,6 @@ img{
 
 .yellow-button:active{
   background-color: var(--activ-yellow);
-  color: ;
 }
 
 
@@ -166,7 +165,7 @@ img{
 .logo:hover{
   opacity: 0.7;
 }
-.logo:active:{
+.logo:active{
   opacity: 0.3;
 }
 
@@ -263,8 +262,6 @@ img{
 }
 
 /* наши партнеры */
-.partners{
-}
 
 .partners img{
   opacity: 0.2;
