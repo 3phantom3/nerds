@@ -71,6 +71,11 @@ a{
   text-decoration: none;
 }
 
+h1,h2,h3{
+  padding: 0;
+  margin: 0;
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -79,6 +84,10 @@ img{
 .contanier{
   width: 1160px;
   margin: 0 auto;
+}
+
+.unvisibel{
+  display: none;
 }
 
 /* кнопки */
@@ -142,8 +151,21 @@ img{
 
 .site-navigation{
   list-style: none;
+  margin: 0;
+  padding: 0;
 
 }
+
+.site-navigation li{
+  margin-right: 45px;
+
+}
+
+.site-navigation li:last-child{
+  margin-right: 0;
+
+}
+
 
 .navigation a:visited{
   color: var(--base-black);
@@ -190,6 +212,8 @@ img{
 
 .slider{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slider-item h3{
@@ -201,6 +225,11 @@ img{
 .slider-item p{
   color: var(--paragraf-text);
 
+}
+
+.slider-item .button{
+  width: 240px;
+  height: 50px;
 }
 
 /* услуги */
@@ -454,3 +483,68 @@ color: var(--social-text);
   display: none;
 }
 
+/* грид сетки макета */
+
+body{
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.navigation{
+  padding-top: 49px;
+  display: grid;
+  grid-template-columns: 160px 1fr min-content;
+  outline: 5px solid red;
+  outline-offset: -5px;
+  gap:0;
+}
+
+.logo{
+  outline: 5px solid green;
+  outline-offset: -5px;
+}
+
+.site-navigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  outline: 5px solid rosybrown;
+  outline-offset: -5px;
+}
+
+.cart-navigation{
+  outline: 5px solid yellow;
+  outline-offset: -5px;
+}
+
+.slider-item{
+  display: grid;
+  grid-template-columns: 1fr 760px;
+  grid-template-rows: 1fr min-content min-content;
+  width: 1160px;
+  height: 431px;
+}
+
+.slider-item img{
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+}
+
+
+
+.slider-item h3{
+  margin-top: 78px;
+  margin-bottom: 25px;
+}
+
+.slider-item p{
+  margin: 0;
+  margin-bottom: 38px;
+}
+.slider-item a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
