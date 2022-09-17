@@ -23,7 +23,7 @@
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <div class="cart-navigation">
-        <img src="img/cart-icon.svg">
+        <img src="img/cart-icon.svg" width="15px" height="15px">
         <a href="blank.html">Корзина</a>
       </div>
      </nav>
@@ -40,13 +40,13 @@
           <a class="button" href="blank.html">Узнать больше</a>
           <img src="img/slayder/nerds-index-slide1.png" width="760" height="431">
         </li>
-        <li class="slider-item">
+        <li class="slider-item unvisibel">
           <h3>Любим математику как никто другой</h3>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
           <a class="button" href="blank.html">Узнать больше</a>
           <img src="img/slayder/nerds-index-slide2.png" width="760" height="431">
         </li>
-        <li class="slider-item">
+        <li class="slider-item unvisibel">
           <h3>Только ночь, только хардкор</h3>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="button" href="blank.html">Узнать больше</a>
@@ -54,28 +54,28 @@
         </li>
       </ul>
       <ul class="slider-menu">
-        <li><a href="#"></a>1</li>
-        <li><a href="#"></a>2</li>
-        <li><a href="#"></a>3</li>
+        <li><a class="slider-menu-button" href="#">1</a></li>
+        <li><a class="slider-menu-button" href="#">2</a></li>
+        <li><a class="slider-menu-button" href="#">3</a></li>
       </ul>
     </div>
     </section>
     <section class="service contanier">
-      <h2>Услуги</h2>
-      <ul>
-        <li>
+      <h2 class="unvisibel">Услуги</h2>
+      <ul class="service-list">
+        <li class="service-item">
           <img src="img/ilustration/illustration-1.svg" width="260" height="49">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="button" href="blank.html">Заказать</a>
         </li>
-        <li>
+        <li class="service-item">
           <img src="img/ilustration/illustration-2.svg" width="260" height="49">
           <h3>приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="button green-button" href="blank.html">Заказать</a>
         </li>
-        <li>
+        <li class="service-item">
           <img src="img/ilustration/illustration-3.svg" width="260" height="49">
           <h3>презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -83,63 +83,71 @@
         </li>
       </ul>
     </section>
-    <section class="us contanier">
-      <h2>О нас</h2>
-      <p class="us-titel">Мы — маленькая, но гордаядизайн-студия из Краснодара.</p>
-      <p class="us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
-      <img src="img/nerds-illustration.svg" width="360" height="208">
-      <p class="us-orders">
-        Выполняем заказы на разработку:
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </p>
-      <p class="us-procent">
-        с 2004 года Любим точность во всем:
-        <dl class="us-procent-table">
-          <dt>146<sup>%</sup></dt>
-            <dd>Уровень самоотдачи</dd>
-          <dt>100<sup>%</sup></dt>
-            <dd>Соблюдение сроков</dd>
-          <dt>50<sup>%</sup></dt>
-            <dd>Минимальная предоплата</dd>
-        </dl>
-      </p>
+    <section class="us-and-procent contanier">
+      <section class="us">
+        <h2 class="unvisibel">О нас</h2>
+        <p class="us-titel">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="us-orders">
+          <span class="us-order-title">Выполняем заказы на разработку:</span>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </p>
+      </section>
+      <section class="procent">
+        <img src="img/nerds-illustration.svg" width="360" height="208">
+        <p class="us-procent">
+          <p class='us-procent-title'>с 2004 года Любим точность во всем:</p>
+          <dl class="us-procent-table">
+            <dt>146<sup>%</sup></dt>
+              <dd>Уровень самоотдачи</dd>
+            <dt>100<sup>%</sup></dt>
+              <dd>Соблюдение сроков</dd>
+            <dt>50<sup>%</sup></dt>
+              <dd>Минимальная предоплата</dd>
+          </dl>
+        </p>
+      </section>
     </section>
     <section class="partners contanier">
-      <h2>Наши партнеры</h2>
-      <a href="#"><img src="img/partners/logo_htmlacademy.svg" alt="htmlacademy"></a>
-      <a href="#"><img src="img/partners/logo_borodinsky.svg" alt="borodinsky"></a>
-      <a href="#"><img src="img/partners/logo_pink.svg" alt="pink"></a>
-      <a href='#'><img src="img/partners/logo_mishka.svg" alt="logo_mishka"></a>
+      <h2 class="unvisibel">Наши партнеры</h2>
+      <a class="partners-item" href="#"><img src="img/partners/logo_htmlacademy.svg" alt="htmlacademy"></a>
+      <a class="partners-item" href="#"><img src="img/partners/logo_borodinsky.svg" alt="borodinsky"></a>
+      <a class="partners-item" href="#"><img src="img/partners/logo_pink.svg" alt="pink"></a>
+      <a class="partners-item" href='#'><img src="img/partners/logo_mishka.svg" alt="logo_mishka"></a>
     </section>
    </main>
    <footer>
     <section class="contacts">
       <div class="contanier">
-      <h2>Контакты</h2>
-      <p class="contacts-titel">NЁRDS DESIGN STUDIO</p>
-      <p class="contacts-text">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <a class="contacts-tel" href="tel:+78005558628">+7 800 555-86-28</a>
-      <a class='button' href="blank.html">Напишите нам</a>
-    </div>
-      <img src="img/map/map.jpg" alt="карта">
-      <img src="img/map/map-marker.png" alt="маркер на карте">
+        <div class="contacts-wraper">
+          <h2 class="unvisibel">Контакты</h2>
+          <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
+          <p class="contacts-text">наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+          <a class="contacts-tel" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class='button' href="blank.html">Напишите нам</a>
+        </div>
+        <img class="contacts-map-marker" src="img/map/map-marker.png" alt="маркер на карте">
+      </div>
+      <img class="contacts-map" src="img/map/map.jpg" alt="карта" width="1440" height="416">
     </section>
     <section class="social contanier">
-      <h2>Социальные сети</h2>
-      <ul>
+      <h2 class="unvisibel">Социальные сети</h2>
+      <ul class="social-button-list">
         <li><a class="social-button social-button-vk" href="blank.html"><img src="img/social-icon/vk-icon.svg" alt="vk">Вконтакте</a></li>
         <li><a class="social-button social-button-shape" href="blank.html"><img src="img/social-icon/Shape.svg" alt="facebook">Facebook</a></li>
         <li><a class="social-button social-button-insta" href="blank.html"><img src="img/social-icon/insta-icon.svg" alt="instagramm">Инстаграм</a></li>
       </ul>
+      <div class="promo">
       <p class="social-titel">Давайте дружить, это выгодно!</p>
       <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
+     </div>
     </section>
    </footer>
-   <section class="modal" >
+   <section class="modal unvisibel" >
      <h2>Напишите нам</h2>
      <form action="https://echo.htmlacademy.ru" method="post">
        <label for="name">Ваше имя:</label>
